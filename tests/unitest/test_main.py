@@ -4,14 +4,14 @@ import datetime
 import logging
 import json
 import os
-
+import pathlib
 import dtlpy as dl
 from dtlpymetrics.dtlpy_scores import ScoreType
 from dtlpymetrics import calc_task_score
 
 logger = logging.getLogger()
 
-PATH = os.path.dirname(os.path.abspath(__file__))
+PATH = pathlib.Path(os.path.abspath(__file__)).parent.parent
 
 
 class TestRunner(unittest.TestCase):
@@ -30,7 +30,7 @@ class TestRunner(unittest.TestCase):
 
         logger.info('[SETUP] - done getting entities')
         now = datetime.datetime.now().isoformat(sep='.', timespec='minutes').replace('.', '_').replace(':', '.')
-        self.assets_path = os.path.join(PATH, 'assets')
+        self.assets_path = os.path.join(PATH, 'assets', "unittest")
         self.test_dump_path = os.path.join(PATH, 'assets', now)
         os.environ['SCORES_DEBUG_PATH'] = self.test_dump_path
 
