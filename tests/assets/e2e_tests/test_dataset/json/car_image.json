@@ -22,9 +22,7 @@
       "thumbnailId": "67065545196aff6ba0dfba7e",
       "width": 1024
     },
-    "tags": {
-      "predict": true
-    }
+    "single_item_test": true
   },
   "name": "car_image.jpeg",
   "creator": "daniel.f@dataloop.ai",
