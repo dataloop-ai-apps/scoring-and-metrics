@@ -1,0 +1,351 @@
+{
+  "projectId": null,
+  "orgId": null,
+  "connections": [
+    {
+      "src": {
+        "nodeId": "514130a1-e9f1-4aa4-be4f-266121ab45e5",
+        "portId": "c30f9256-a47a-48e3-b742-5224f7bd802d"
+      },
+      "tgt": {
+        "nodeId": "4414a9d4-ea40-4855-8d94-6f9c0b399a60",
+        "portId": "2c6de384-cb19-46a4-8bac-f31d2d5799c8"
+      },
+      "condition": "{}"
+    },
+    {
+      "src": {
+        "nodeId": "efc90946-d4cb-4d45-8801-ffc2cad85d87",
+        "portId": "f922be8e-44ab-42cf-bdf1-1b294fb7157b"
+      },
+      "tgt": {
+        "nodeId": "e698a523-4caa-4efe-a6dc-ab38291e6c45",
+        "portId": "b47afde4-610c-44ce-b8eb-961195af10cb"
+      },
+      "condition": "{}",
+      "action": "consensus passed"
+    },
+    {
+      "src": {
+        "nodeId": "efc90946-d4cb-4d45-8801-ffc2cad85d87",
+        "portId": "f922be8e-44ab-42cf-bdf1-1b294fb7157b"
+      },
+      "tgt": {
+        "nodeId": "e698a523-4caa-4efe-a6dc-ab38291e6c45",
+        "portId": "b47afde4-610c-44ce-b8eb-961195af10cb"
+      },
+      "condition": "{}",
+      "action": "consensus failed"
+    },
+    {
+      "src": {
+        "nodeId": "4414a9d4-ea40-4855-8d94-6f9c0b399a60",
+        "portId": "ab4c2b84-1884-4b82-b8a7-e7288a0556b7"
+      },
+      "tgt": {
+        "nodeId": "efc90946-d4cb-4d45-8801-ffc2cad85d87",
+        "portId": "bc8132b2-4b9f-4358-904f-688f226ae6cf"
+      },
+      "condition": "{}",
+      "action": "completed"
+    },
+    {
+      "src": {
+        "nodeId": "514130a1-e9f1-4aa4-be4f-266121ab45e5",
+        "portId": "c30f9256-a47a-48e3-b742-5224f7bd802d"
+      },
+      "tgt": {
+        "nodeId": "9406a218-1fcd-4dc6-9eea-940bb4f2132b",
+        "portId": "5bcb8ea3-7e9e-448f-a4f4-71dddada235d"
+      },
+      "condition": "{}"
+    }
+  ],
+  "startNodes": [
+    {
+      "nodeId": "514130a1-e9f1-4aa4-be4f-266121ab45e5",
+      "type": "root",
+      "id": "619b222f-3031-483e-91c8-4a3c25c7aa35"
+    },
+    {
+      "nodeId": "9406a218-1fcd-4dc6-9eea-940bb4f2132b",
+      "type": "trigger",
+      "id": "e7f7699b-cc7e-46ad-8a3a-538f2b0da4b3"
+    }
+  ],
+  "variables": [
+    {
+      "name": "dataset",
+      "type": "Dataset",
+      "description": null
+    }
+  ],
+  "description": "",
+  "name": "consensus agreement",
+  "templateKind": "org",
+  "nodes": [
+    {
+      "id": "efc90946-d4cb-4d45-8801-ffc2cad85d87",
+      "inputs": [
+        {
+          "portId": "bc8132b2-4b9f-4358-904f-688f226ae6cf",
+          "nodeId": "bc8132b2-4b9f-4358-904f-688f226ae6cf",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "portId": "f922be8e-44ab-42cf-bdf1-1b294fb7157b",
+          "nodeId": "f922be8e-44ab-42cf-bdf1-1b294fb7157b",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "actions": [
+            "consensus passed",
+            "consensus failed"
+          ],
+          "io": "output"
+        }
+      ],
+      "name": "Consensus Agreement",
+      "type": "custom",
+      "namespace": {
+        "functionName": "consensus_agreement",
+        "projectName": null,
+        "serviceName": "scoring-and-metrics",
+        "moduleName": "dlm_module",
+        "packageName": "scoring-and-metrics"
+      },
+      "projectId": "c156c404-718c-4695-b187-87551cfb134c",
+      "appName": "Scoring and metrics app",
+      "dpkName": "scoring-and-metrics",
+      "metadata": {
+        "position": {
+          "x": 10816.617938225505,
+          "y": 10129.146554556288,
+          "z": 0
+        },
+        "componentGroupName": "data",
+        "customNodeConfig": {
+          "agreement_threshold": 0.5,
+          "consensus_pass_keep_best": false,
+          "consensus_fail_keep_all": true,
+          "validation": {
+            "valid": true,
+            "errors": [
+            ]
+          }
+        },
+        "repeatable": true,
+        "pipelineNodeName": "consensus_agreement"
+      }
+    },
+    {
+      "id": "514130a1-e9f1-4aa4-be4f-266121ab45e5",
+      "inputs": [
+        {
+          "portId": "4c2ef8c4-f98d-4643-b926-dd829f48460e",
+          "nodeId": "4c2ef8c4-f98d-4643-b926-dd829f48460e",
+          "type": "Dataset",
+          "name": "dataset",
+          "displayName": "dataset",
+          "variableName": "dataset",
+          "io": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "portId": "c30f9256-a47a-48e3-b742-5224f7bd802d",
+          "nodeId": "c30f9256-a47a-48e3-b742-5224f7bd802d",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "output"
+        }
+      ],
+      "name": "preprocess",
+      "type": "code",
+      "namespace": {
+        "functionName": "run",
+        "packageName": "",
+        "serviceName": ""
+      },
+      "projectId": null,
+      "config": {
+        "package": {
+          "code": "import dtlpy as dl\n\nclass ServiceRunner:\n\n    def run(self, item):\n        return item\n",
+          "name": "run",
+          "type": "code",
+          "codebase": {
+            "type": "item"
+          }
+        }
+      },
+      "metadata": {
+        "position": {
+          "x": 10163.615696649149,
+          "y": 10127.172006678276,
+          "z": 0
+        },
+        "componentGroupName": "automation",
+        "codeApplicationName": "preprocess",
+        "repeatable": true
+      }
+    },
+    {
+      "id": "4414a9d4-ea40-4855-8d94-6f9c0b399a60",
+      "inputs": [
+        {
+          "portId": "2c6de384-cb19-46a4-8bac-f31d2d5799c8",
+          "nodeId": "2c6de384-cb19-46a4-8bac-f31d2d5799c8",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "portId": "ab4c2b84-1884-4b82-b8a7-e7288a0556b7",
+          "nodeId": "ab4c2b84-1884-4b82-b8a7-e7288a0556b7",
+          "type": "Item",
+          "name": "item",
+          "displayName": "Complete",
+          "actions": [
+            "completed",
+            "discard"
+          ],
+          "io": "output"
+        }
+      ],
+      "name": "Consensus Task",
+      "type": "task",
+      "namespace": {
+        "functionName": "move_to_task",
+        "projectName": "DataloopTasks",
+        "serviceName": "pipeline-utils",
+        "moduleName": "default_module",
+        "packageName": "pipeline-utils"
+      },
+      "projectId": "f8a4b8ce-5ff3-4386-84dc-1bda3a5bc92a",
+      "metadata": {
+        "position": {
+          "x": 10448.897597968806,
+          "y": 10128.04319263568,
+          "z": 0
+        },
+        "taskType": "annotation",
+        "consensusTaskType": "consensus",
+        "componentGroupName": "labeling",
+        "repeatable": true
+      }
+    },
+    {
+      "id": "9406a218-1fcd-4dc6-9eea-940bb4f2132b",
+      "inputs": [
+        {
+          "portId": "5bcb8ea3-7e9e-448f-a4f4-71dddada235d",
+          "nodeId": "5bcb8ea3-7e9e-448f-a4f4-71dddada235d",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "portId": "2e559168-b9de-4ce0-9433-3967c5732c84",
+          "nodeId": "2e559168-b9de-4ce0-9433-3967c5732c84",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "output"
+        }
+      ],
+      "name": "status-handler",
+      "type": "code",
+      "namespace": {
+        "functionName": "run",
+        "packageName": "",
+        "serviceName": ""
+      },
+      "projectId": null,
+      "config": {
+        "package": {
+          "code": "import dtlpy as dl\n\nclass ServiceRunner:\n\n    def run(self, item):\n        return item\n",
+          "name": "run",
+          "type": "code",
+          "codebase": {
+            "type": "item"
+          }
+        }
+      },
+      "metadata": {
+        "position": {
+          "x": 10448.558624326308,
+          "y": 10297.434365012263,
+          "z": 0
+        },
+        "componentGroupName": "automation",
+        "codeApplicationName": "status-handler",
+        "repeatable": true
+      }
+    },
+    {
+      "id": "e698a523-4caa-4efe-a6dc-ab38291e6c45",
+      "inputs": [
+        {
+          "portId": "b47afde4-610c-44ce-b8eb-961195af10cb",
+          "nodeId": "b47afde4-610c-44ce-b8eb-961195af10cb",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "portId": "1c54931e-1b3e-4711-9766-58a2a2430ab9",
+          "nodeId": "1c54931e-1b3e-4711-9766-58a2a2430ab9",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "output"
+        }
+      ],
+      "name": "postprocess",
+      "type": "code",
+      "namespace": {
+        "functionName": "run",
+        "packageName": "",
+        "serviceName": ""
+      },
+      "projectId": null,
+      "config": {
+        "package": {
+          "code": "import dtlpy as dl\n\nclass ServiceRunner:\n\n    def run(self, item):\n        return item\n",
+          "name": "run",
+          "type": "code",
+          "codebase": {
+            "type": "item"
+          }
+        }
+      },
+      "metadata": {
+        "position": {
+          "x": 11230.452864677834,
+          "y": 10131.316221902744,
+          "z": 0
+        },
+        "componentGroupName": "automation",
+        "codeApplicationName": "postprocess",
+        "repeatable": true
+      }
+    }
+  ],
+  "preview": "6755b1bf89b8dc658552260e",
+  "_id": "6755b1dfe94c44c6e3141e46"
+}
