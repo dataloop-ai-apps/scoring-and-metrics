@@ -23,9 +23,9 @@ task_nodes:
           taskOwner: annotator1@dataloop.ai
           workload:
               - assigneeId: annotator1@dataloop.ai
-                workload: 50
+                load: 50
               - assigneeId: annotator2@dataloop.ai
-                workload: 50
+                load: 50
           consensusTaskType: consensus
           consensusAssignees: 2
           consensusPercentage: 100
