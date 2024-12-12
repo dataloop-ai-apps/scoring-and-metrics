@@ -216,7 +216,8 @@
           "displayName": "Complete",
           "actions": [
             "completed",
-            "discard"
+            "discard",
+            "consensus_done"
           ],
           "io": "output"
         }
