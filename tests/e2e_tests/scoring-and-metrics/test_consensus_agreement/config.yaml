@@ -10,10 +10,10 @@ datasets:
 
 # list of pipeline variables to update with reference
 variables:
-    name: dataset
-    resource_type: datasets
-    resource_value:
-        resource_name: test_dataset
+    - name: dataset
+      resource_type: datasets
+      resource_value:
+          resource_name: test_dataset
 
 # list of pipeline task nodes to update with parameters
 task_nodes:
