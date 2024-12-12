@@ -14,3 +14,18 @@ variables:
     resource_type: datasets
     resource_value:
         resource_name: test_dataset
+
+# list of pipeline task nodes to update with parameters
+task_nodes:
+    - name: Consensus Task
+      dataset: test_dataset
+      metadata:
+          taskOwner: annotator1@dataloop.ai
+          workload:
+              - assigneeId: annotator1@dataloop.ai
+                workload: 50
+              - assigneeId: annotator2@dataloop.ai
+                workload: 50
+          consensusTaskType: consensus
+          consensusAssignees: 2
+          consensusPercentage: 100
