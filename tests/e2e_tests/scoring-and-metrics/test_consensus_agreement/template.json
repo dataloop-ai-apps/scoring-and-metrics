@@ -4,73 +4,68 @@
   "connections": [
     {
       "src": {
-        "nodeId": "514130a1-e9f1-4aa4-be4f-266121ab45e5",
-        "portId": "c30f9256-a47a-48e3-b742-5224f7bd802d"
+        "nodeId": "624caf34-bf03-4f9a-a709-667e2dbfc61f",
+        "portId": "a81dd14f-4ae8-4387-ba6e-66294b960751"
       },
       "tgt": {
-        "nodeId": "4414a9d4-ea40-4855-8d94-6f9c0b399a60",
-        "portId": "2c6de384-cb19-46a4-8bac-f31d2d5799c8"
-      },
-      "condition": "{}"
-    },
-    {
-      "src": {
-        "nodeId": "efc90946-d4cb-4d45-8801-ffc2cad85d87",
-        "portId": "f922be8e-44ab-42cf-bdf1-1b294fb7157b"
-      },
-      "tgt": {
-        "nodeId": "e698a523-4caa-4efe-a6dc-ab38291e6c45",
-        "portId": "b47afde4-610c-44ce-b8eb-961195af10cb"
-      },
-      "condition": "{}",
-      "action": "consensus passed"
-    },
-    {
-      "src": {
-        "nodeId": "efc90946-d4cb-4d45-8801-ffc2cad85d87",
-        "portId": "f922be8e-44ab-42cf-bdf1-1b294fb7157b"
-      },
-      "tgt": {
-        "nodeId": "e698a523-4caa-4efe-a6dc-ab38291e6c45",
-        "portId": "b47afde4-610c-44ce-b8eb-961195af10cb"
-      },
-      "condition": "{}",
-      "action": "consensus failed"
-    },
-    {
-      "src": {
-        "nodeId": "4414a9d4-ea40-4855-8d94-6f9c0b399a60",
-        "portId": "ab4c2b84-1884-4b82-b8a7-e7288a0556b7"
-      },
-      "tgt": {
-        "nodeId": "efc90946-d4cb-4d45-8801-ffc2cad85d87",
-        "portId": "bc8132b2-4b9f-4358-904f-688f226ae6cf"
+        "nodeId": "b5aade59-7ec1-450e-8ae6-866e33023faa",
+        "portId": "b76b73a3-5cd9-44e8-9285-a68db5e9b884"
       },
       "condition": "{}",
       "action": "consensus_done"
     },
     {
       "src": {
-        "nodeId": "514130a1-e9f1-4aa4-be4f-266121ab45e5",
-        "portId": "c30f9256-a47a-48e3-b742-5224f7bd802d"
+        "nodeId": "4a40cb74-c8ac-4a0a-942f-072e04cd28df",
+        "portId": "a2148190-1122-4f44-a925-59a5ba9b8765"
       },
       "tgt": {
-        "nodeId": "9406a218-1fcd-4dc6-9eea-940bb4f2132b",
-        "portId": "5bcb8ea3-7e9e-448f-a4f4-71dddada235d"
+        "nodeId": "624caf34-bf03-4f9a-a709-667e2dbfc61f",
+        "portId": "7c7cf22b-7910-410e-878f-99fcf9799f8f"
       },
       "condition": "{}"
+    },
+    {
+      "src": {
+        "nodeId": "4a40cb74-c8ac-4a0a-942f-072e04cd28df",
+        "portId": "a2148190-1122-4f44-a925-59a5ba9b8765"
+      },
+      "tgt": {
+        "nodeId": "4a121126-8edf-476f-b72c-36a639c9573a",
+        "portId": "7c978882-8dc2-4184-bff9-7b5726b5bd98"
+      },
+      "condition": "{}"
+    },
+    {
+      "src": {
+        "nodeId": "b5aade59-7ec1-450e-8ae6-866e33023faa",
+        "portId": "4757714f-8426-4269-8a30-bcf09b1dab5c"
+      },
+      "tgt": {
+        "nodeId": "4c4996ff-a5e9-448a-9820-8fd5924a6012",
+        "portId": "1fa67675-bf97-461b-b8a1-6524e117bf82"
+      },
+      "condition": "{}",
+      "action": "consensus passed"
+    },
+    {
+      "src": {
+        "nodeId": "b5aade59-7ec1-450e-8ae6-866e33023faa",
+        "portId": "4757714f-8426-4269-8a30-bcf09b1dab5c"
+      },
+      "tgt": {
+        "nodeId": "4c4996ff-a5e9-448a-9820-8fd5924a6012",
+        "portId": "1fa67675-bf97-461b-b8a1-6524e117bf82"
+      },
+      "condition": "{}",
+      "action": "consensus failed"
     }
   ],
   "startNodes": [
     {
-      "nodeId": "514130a1-e9f1-4aa4-be4f-266121ab45e5",
+      "nodeId": "4a40cb74-c8ac-4a0a-942f-072e04cd28df",
       "type": "root",
-      "id": "619b222f-3031-483e-91c8-4a3c25c7aa35"
-    },
-    {
-      "nodeId": "9406a218-1fcd-4dc6-9eea-940bb4f2132b",
-      "type": "trigger",
-      "id": "e7f7699b-cc7e-46ad-8a3a-538f2b0da4b3"
+      "id": "85f4d3e0-90d5-4ca1-a53e-d947202d2b4e"
     }
   ],
   "variables": [
@@ -85,11 +80,11 @@
   "templateKind": "org",
   "nodes": [
     {
-      "id": "efc90946-d4cb-4d45-8801-ffc2cad85d87",
+      "id": "b5aade59-7ec1-450e-8ae6-866e33023faa",
       "inputs": [
         {
-          "portId": "bc8132b2-4b9f-4358-904f-688f226ae6cf",
-          "nodeId": "bc8132b2-4b9f-4358-904f-688f226ae6cf",
+          "portId": "b76b73a3-5cd9-44e8-9285-a68db5e9b884",
+          "nodeId": "b76b73a3-5cd9-44e8-9285-a68db5e9b884",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -98,8 +93,8 @@
       ],
       "outputs": [
         {
-          "portId": "f922be8e-44ab-42cf-bdf1-1b294fb7157b",
-          "nodeId": "f922be8e-44ab-42cf-bdf1-1b294fb7157b",
+          "portId": "4757714f-8426-4269-8a30-bcf09b1dab5c",
+          "nodeId": "4757714f-8426-4269-8a30-bcf09b1dab5c",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -124,8 +119,8 @@
       "dpkName": "scoring-and-metrics",
       "metadata": {
         "position": {
-          "x": 10816.617938225505,
-          "y": 10129.146554556288,
+          "x": 1122,
+          "y": 403,
           "z": 0
         },
         "componentGroupName": "data",
@@ -144,11 +139,63 @@
       }
     },
     {
-      "id": "514130a1-e9f1-4aa4-be4f-266121ab45e5",
+      "id": "624caf34-bf03-4f9a-a709-667e2dbfc61f",
       "inputs": [
         {
-          "portId": "4c2ef8c4-f98d-4643-b926-dd829f48460e",
-          "nodeId": "4c2ef8c4-f98d-4643-b926-dd829f48460e",
+          "portId": "7c7cf22b-7910-410e-878f-99fcf9799f8f",
+          "nodeId": "7c7cf22b-7910-410e-878f-99fcf9799f8f",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "portId": "a81dd14f-4ae8-4387-ba6e-66294b960751",
+          "nodeId": "a81dd14f-4ae8-4387-ba6e-66294b960751",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "color": "#50223a",
+          "actions": [
+            "completed",
+            "discard",
+            "consensus_done"
+          ],
+          "io": "output"
+        }
+      ],
+      "name": "Consensus Task",
+      "type": "task",
+      "namespace": {
+        "functionName": "move_to_task",
+        "projectName": "DataloopTasks",
+        "serviceName": "pipeline-utils",
+        "moduleName": "default_module",
+        "packageName": "pipeline-utils"
+      },
+      "projectId": "f8a4b8ce-5ff3-4386-84dc-1bda3a5bc92a",
+      "metadata": {
+        "position": {
+          "x": 727,
+          "y": 403,
+          "z": 0
+        },
+        "taskType": "annotation",
+        "consensusTaskType": "consensus",
+        "priority": 2,
+        "componentGroupName": "labeling",
+        "repeatable": true,
+        "dueDate": 0
+      }
+    },
+    {
+      "id": "4a40cb74-c8ac-4a0a-942f-072e04cd28df",
+      "inputs": [
+        {
+          "portId": "efd36679-8930-4529-bd39-0a3d3b0c974e",
+          "nodeId": "efd36679-8930-4529-bd39-0a3d3b0c974e",
           "type": "Dataset",
           "name": "dataset",
           "displayName": "dataset",
@@ -158,8 +205,8 @@
       ],
       "outputs": [
         {
-          "portId": "c30f9256-a47a-48e3-b742-5224f7bd802d",
-          "nodeId": "c30f9256-a47a-48e3-b742-5224f7bd802d",
+          "portId": "a2148190-1122-4f44-a925-59a5ba9b8765",
+          "nodeId": "a2148190-1122-4f44-a925-59a5ba9b8765",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -186,8 +233,8 @@
       },
       "metadata": {
         "position": {
-          "x": 10163.615696649149,
-          "y": 10127.172006678276,
+          "x": 446.23455810546875,
+          "y": 405,
           "z": 0
         },
         "componentGroupName": "automation",
@@ -196,11 +243,11 @@
       }
     },
     {
-      "id": "4414a9d4-ea40-4855-8d94-6f9c0b399a60",
+      "id": "4a121126-8edf-476f-b72c-36a639c9573a",
       "inputs": [
         {
-          "portId": "2c6de384-cb19-46a4-8bac-f31d2d5799c8",
-          "nodeId": "2c6de384-cb19-46a4-8bac-f31d2d5799c8",
+          "portId": "7c978882-8dc2-4184-bff9-7b5726b5bd98",
+          "nodeId": "7c978882-8dc2-4184-bff9-7b5726b5bd98",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -209,57 +256,8 @@
       ],
       "outputs": [
         {
-          "portId": "ab4c2b84-1884-4b82-b8a7-e7288a0556b7",
-          "nodeId": "ab4c2b84-1884-4b82-b8a7-e7288a0556b7",
-          "type": "Item",
-          "name": "item",
-          "displayName": "Complete",
-          "actions": [
-            "completed",
-            "discard",
-            "consensus_done"
-          ],
-          "io": "output"
-        }
-      ],
-      "name": "Consensus Task",
-      "type": "task",
-      "namespace": {
-        "functionName": "move_to_task",
-        "projectName": "DataloopTasks",
-        "serviceName": "pipeline-utils",
-        "moduleName": "default_module",
-        "packageName": "pipeline-utils"
-      },
-      "projectId": "f8a4b8ce-5ff3-4386-84dc-1bda3a5bc92a",
-      "metadata": {
-        "position": {
-          "x": 10448.897597968806,
-          "y": 10128.04319263568,
-          "z": 0
-        },
-        "taskType": "annotation",
-        "consensusTaskType": "consensus",
-        "componentGroupName": "labeling",
-        "repeatable": true
-      }
-    },
-    {
-      "id": "9406a218-1fcd-4dc6-9eea-940bb4f2132b",
-      "inputs": [
-        {
-          "portId": "5bcb8ea3-7e9e-448f-a4f4-71dddada235d",
-          "nodeId": "5bcb8ea3-7e9e-448f-a4f4-71dddada235d",
-          "type": "Item",
-          "name": "item",
-          "displayName": "item",
-          "io": "input"
-        }
-      ],
-      "outputs": [
-        {
-          "portId": "2e559168-b9de-4ce0-9433-3967c5732c84",
-          "nodeId": "2e559168-b9de-4ce0-9433-3967c5732c84",
+          "portId": "e755d461-a4cc-4c8b-95d6-d55404f04f98",
+          "nodeId": "e755d461-a4cc-4c8b-95d6-d55404f04f98",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -286,8 +284,8 @@
       },
       "metadata": {
         "position": {
-          "x": 10448.558624326308,
-          "y": 10297.434365012263,
+          "x": 726.7283905406058,
+          "y": 548.1851588119695,
           "z": 0
         },
         "componentGroupName": "automation",
@@ -296,11 +294,11 @@
       }
     },
     {
-      "id": "e698a523-4caa-4efe-a6dc-ab38291e6c45",
+      "id": "4c4996ff-a5e9-448a-9820-8fd5924a6012",
       "inputs": [
         {
-          "portId": "b47afde4-610c-44ce-b8eb-961195af10cb",
-          "nodeId": "b47afde4-610c-44ce-b8eb-961195af10cb",
+          "portId": "1fa67675-bf97-461b-b8a1-6524e117bf82",
+          "nodeId": "1fa67675-bf97-461b-b8a1-6524e117bf82",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -309,8 +307,8 @@
       ],
       "outputs": [
         {
-          "portId": "1c54931e-1b3e-4711-9766-58a2a2430ab9",
-          "nodeId": "1c54931e-1b3e-4711-9766-58a2a2430ab9",
+          "portId": "c3ebfd00-18e0-4916-8da0-d12fc6d07e26",
+          "nodeId": "c3ebfd00-18e0-4916-8da0-d12fc6d07e26",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -329,16 +327,13 @@
         "package": {
           "code": "import dtlpy as dl\n\n\nclass ServiceRunner:\n    def run(self, item: dl.Item, context: dl.Context = None):\n        action = context.item_status\n        if action != \"consensus passed\":\n            raise ValueError(f\"Expected 'consensus passed', got {action}\")\n        return item\n",
           "name": "run",
-          "type": "code",
-          "codebase": {
-            "type": "item"
-          }
+          "type": "code"
         }
       },
       "metadata": {
         "position": {
-          "x": 11230.452864677834,
-          "y": 10131.316221902744,
+          "x": 1542.777702425733,
+          "y": 404.97533878279313,
           "z": 0
         },
         "componentGroupName": "automation",
@@ -347,6 +342,6 @@
       }
     }
   ],
-  "preview": "6755b1bf89b8dc658552260e",
-  "_id": "6755b1dfe94c44c6e3141e46"
+  "preview": "675f0722bd7450975afa54ec",
+  "_id": "675f07857cda85ac1c1a069c"
 }
