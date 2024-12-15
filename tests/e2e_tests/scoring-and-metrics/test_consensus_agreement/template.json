@@ -47,7 +47,7 @@
         "portId": "bc8132b2-4b9f-4358-904f-688f226ae6cf"
       },
       "condition": "{}",
-      "action": "completed"
+      "action": "consensus_done"
     },
     {
       "src": {
@@ -176,7 +176,7 @@
       "projectId": null,
       "config": {
         "package": {
-          "code": "import dtlpy as dl\n\nclass ServiceRunner:\n\n    def run(self, item):\n        return item\n",
+          "code": "import dtlpy as dl\n\n\nclass ServiceRunner:\n    def run(self, dataset: dl.Dataset):\n        filters = dl.Filters()\n        filters.add(field='metadata.single_item_test', values=True)\n        items = dataset.items.list(filters=filters)\n        if items.items_count != 1:\n            raise ValueError(f\"Expected 1 item, got {len(items)}\")\n        item = list(items.all())[0]\n        return item\n",
           "name": "run",
           "type": "code",
           "codebase": {
@@ -276,7 +276,7 @@
       "projectId": null,
       "config": {
         "package": {
-          "code": "import dtlpy as dl\n\nclass ServiceRunner:\n\n    def run(self, item):\n        return item\n",
+          "code": "import dtlpy as dl\nimport time\n\n\nclass ServiceRunner:\n    def run(self, item: dl.Item):\n        task: dl.Task = None\n        consensus_items_dir = None\n\n        task_found = False\n        while not task_found:\n            try:\n                task: dl.Task = item.dataset.tasks.get(task_name=\"Consensus Task\")\n                consensus_items_dir = f\"/.consensus/{task.id}/{item.dir[1:]}\"\n                task_found = True\n            except dl.exceptions.NotFound:\n                time.sleep(5)  # Wait for task to be created\n\n        items_found = False\n        requested_consensus_items = None\n        while not items_found:\n            consensus_items = task.get_items(get_consensus_items=True)\n            if isinstance(consensus_items, dl.entities.PagedEntities):\n                consensus_items = list(consensus_items.all())\n\n            filtered_consensus_items = []\n            for consensus_item in consensus_items:\n                if consensus_item.dir == consensus_items_dir:\n                    filtered_consensus_items.append(consensus_item)\n\n            if len(filtered_consensus_items) == 2:\n                requested_consensus_items = filtered_consensus_items\n                items_found = True\n            else:\n                time.sleep(5)  # Wait for items to be created\n\n        item1: dl.Item = requested_consensus_items[0]\n        builder1 = item1.annotations.builder()\n        builder1.add(annotation_definition=dl.Classification(label=\"car1\"))\n        builder1.upload()\n        item1.update_status(status=dl.ItemStatus.COMPLETED, task_id=task.id)\n\n        item2: dl.Item = requested_consensus_items[1]\n        builder2 = item2.annotations.builder()\n        builder2.add(annotation_definition=dl.Classification(label=\"car1\"))\n        builder2.upload()\n        item2.update_status(status=dl.ItemStatus.COMPLETED, task_id=task.id)\n\n        return item\n",
           "name": "run",
           "type": "code",
           "codebase": {
@@ -327,7 +327,7 @@
       "projectId": null,
       "config": {
         "package": {
-          "code": "import dtlpy as dl\n\nclass ServiceRunner:\n\n    def run(self, item):\n        return item\n",
+          "code": "import dtlpy as dl\n\n\nclass ServiceRunner:\n    def run(self, item: dl.Item, context: dl.Context = None):\n        action = context.item_status\n        if action != \"consensus passed\":\n            raise ValueError(f\"Expected 'consensus passed', got {action}\")\n        return item\n",
           "name": "run",
           "type": "code",
           "codebase": {
