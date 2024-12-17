@@ -325,7 +325,7 @@
       "projectId": null,
       "config": {
         "package": {
-          "code": "import dtlpy as dl\n\n\nclass ServiceRunner:\n    def run(self, item: dl.Item, context: dl.Context = None):\n        action = context.item_status\n        if action != \"consensus passed\":\n            raise ValueError(f\"Expected 'consensus passed', got {action}\")\n        return item\n",
+          "code": "import dtlpy as dl\n\n\nclass ServiceRunner:\n    def run(self, item: dl.Item, context: dl.Context = None):\n        action = context.event.action\n        if action != \"consensus passed\":\n            raise ValueError(f\"Expected 'consensus passed', got {action}\")\n        return item\n",
           "name": "run",
           "type": "code"
         }
