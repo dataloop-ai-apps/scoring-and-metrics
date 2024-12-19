@@ -1,7 +1,8 @@
 # ordered list of dpks to publish and install
-dpks:
-    - name: scoring-and-metrics
-      install_app: True
+# TODO: For now, install the DPK on the project first
+#dpks:
+#    - name: scoring-and-metrics
+#      install_app: True
 
 # ordered list of datasets to create from local assets or to get from installed apps
 datasets:
