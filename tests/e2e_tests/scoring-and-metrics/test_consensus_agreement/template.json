@@ -42,8 +42,8 @@
         "portId": "4757714f-8426-4269-8a30-bcf09b1dab5c"
       },
       "tgt": {
-        "nodeId": "4c4996ff-a5e9-448a-9820-8fd5924a6012",
-        "portId": "1fa67675-bf97-461b-b8a1-6524e117bf82"
+        "nodeId": "5976da23-b261-4410-a96d-4daa1cf9bce9",
+        "portId": "76e2024b-0c70-4fb6-9743-12a30eed300a"
       },
       "condition": "{}",
       "action": "consensus passed"
@@ -54,8 +54,8 @@
         "portId": "4757714f-8426-4269-8a30-bcf09b1dab5c"
       },
       "tgt": {
-        "nodeId": "4c4996ff-a5e9-448a-9820-8fd5924a6012",
-        "portId": "1fa67675-bf97-461b-b8a1-6524e117bf82"
+        "nodeId": "71b3f4eb-e854-4b70-bcde-b1ce0727b295",
+        "portId": "ee0f88b1-f873-4216-8f5f-2dcd9c356aed"
       },
       "condition": "{}",
       "action": "consensus failed"
@@ -84,7 +84,7 @@
       "inputs": [
         {
           "portId": "b76b73a3-5cd9-44e8-9285-a68db5e9b884",
-          "nodeId": "b76b73a3-5cd9-44e8-9285-a68db5e9b884",
+          "nodeId": "0f992f7f-7f85-4e76-bcca-8d6caaf70e3e",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -94,7 +94,7 @@
       "outputs": [
         {
           "portId": "4757714f-8426-4269-8a30-bcf09b1dab5c",
-          "nodeId": "4757714f-8426-4269-8a30-bcf09b1dab5c",
+          "nodeId": "b4b204ca-49c4-445e-b7f7-83f6f73ccbe7",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -143,7 +143,7 @@
       "inputs": [
         {
           "portId": "7c7cf22b-7910-410e-878f-99fcf9799f8f",
-          "nodeId": "7c7cf22b-7910-410e-878f-99fcf9799f8f",
+          "nodeId": "e5cbc877-746e-43d5-bbf4-37c8c7c67f93",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -153,7 +153,7 @@
       "outputs": [
         {
           "portId": "a81dd14f-4ae8-4387-ba6e-66294b960751",
-          "nodeId": "a81dd14f-4ae8-4387-ba6e-66294b960751",
+          "nodeId": "2a3f2f41-4547-46f3-a501-dd96a58d28d4",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -195,7 +195,7 @@
       "inputs": [
         {
           "portId": "efd36679-8930-4529-bd39-0a3d3b0c974e",
-          "nodeId": "efd36679-8930-4529-bd39-0a3d3b0c974e",
+          "nodeId": "6ce29f27-bd82-4f85-b3f4-c4c8b74bee01",
           "type": "Dataset",
           "name": "dataset",
           "displayName": "dataset",
@@ -206,7 +206,7 @@
       "outputs": [
         {
           "portId": "a2148190-1122-4f44-a925-59a5ba9b8765",
-          "nodeId": "a2148190-1122-4f44-a925-59a5ba9b8765",
+          "nodeId": "ecc81e4b-616c-415f-b247-e3ac30dc4995",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -247,7 +247,7 @@
       "inputs": [
         {
           "portId": "7c978882-8dc2-4184-bff9-7b5726b5bd98",
-          "nodeId": "7c978882-8dc2-4184-bff9-7b5726b5bd98",
+          "nodeId": "0efd0d3c-d1bf-4940-aa00-34146498bfaf",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -257,7 +257,7 @@
       "outputs": [
         {
           "portId": "e755d461-a4cc-4c8b-95d6-d55404f04f98",
-          "nodeId": "e755d461-a4cc-4c8b-95d6-d55404f04f98",
+          "nodeId": "ffb3a012-976e-4bbd-b362-7407be336160",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -294,11 +294,11 @@
       }
     },
     {
-      "id": "4c4996ff-a5e9-448a-9820-8fd5924a6012",
+      "id": "5976da23-b261-4410-a96d-4daa1cf9bce9",
       "inputs": [
         {
-          "portId": "1fa67675-bf97-461b-b8a1-6524e117bf82",
-          "nodeId": "1fa67675-bf97-461b-b8a1-6524e117bf82",
+          "portId": "76e2024b-0c70-4fb6-9743-12a30eed300a",
+          "nodeId": "76e2024b-0c70-4fb6-9743-12a30eed300a",
           "type": "Item",
           "name": "item",
           "displayName": "item",
@@ -307,15 +307,15 @@
       ],
       "outputs": [
         {
-          "portId": "c3ebfd00-18e0-4916-8da0-d12fc6d07e26",
-          "nodeId": "c3ebfd00-18e0-4916-8da0-d12fc6d07e26",
+          "portId": "604a4ca2-32c1-4ced-af3a-7528568e56c4",
+          "nodeId": "604a4ca2-32c1-4ced-af3a-7528568e56c4",
           "type": "Item",
           "name": "item",
           "displayName": "item",
           "io": "output"
         }
       ],
-      "name": "postprocess",
+      "name": "pass",
       "type": "code",
       "namespace": {
         "functionName": "run",
@@ -325,23 +325,77 @@
       "projectId": null,
       "config": {
         "package": {
-          "code": "import dtlpy as dl\n\n\nclass ServiceRunner:\n    def run(self, item: dl.Item, context: dl.Context = None):\n        action = context.event.action\n        if action != \"consensus passed\":\n            raise ValueError(f\"Expected 'consensus passed', got {action}\")\n        return item\n",
+          "code": "import dtlpy as dl\n\nclass ServiceRunner:\n\n    def run(self, item):\n        return item\n",
           "name": "run",
-          "type": "code"
+          "type": "code",
+          "codebase": {
+            "type": "item"
+          }
         }
       },
       "metadata": {
         "position": {
-          "x": 1542.777702425733,
-          "y": 404.97533878279313,
+          "x": 1559.7630086887848,
+          "y": 336.94293427783936,
           "z": 0
         },
         "componentGroupName": "automation",
-        "codeApplicationName": "postprocess",
+        "codeApplicationName": "pass",
+        "repeatable": true
+      }
+    },
+    {
+      "id": "71b3f4eb-e854-4b70-bcde-b1ce0727b295",
+      "inputs": [
+        {
+          "portId": "ee0f88b1-f873-4216-8f5f-2dcd9c356aed",
+          "nodeId": "ee0f88b1-f873-4216-8f5f-2dcd9c356aed",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "portId": "3e128745-4f8a-4e71-bb2c-7605d5b6c3a1",
+          "nodeId": "3e128745-4f8a-4e71-bb2c-7605d5b6c3a1",
+          "type": "Item",
+          "name": "item",
+          "displayName": "item",
+          "io": "output"
+        }
+      ],
+      "name": "fail",
+      "type": "code",
+      "namespace": {
+        "functionName": "run",
+        "packageName": "",
+        "serviceName": ""
+      },
+      "projectId": null,
+      "config": {
+        "package": {
+          "code": "import dtlpy as dl\n\nclass ServiceRunner:\n\n    def run(self, item):\n        raise ValueError(\"Test Failed\")\n        return item\n",
+          "name": "run",
+          "type": "code",
+          "codebase": {
+            "type": "item"
+          }
+        }
+      },
+      "metadata": {
+        "position": {
+          "x": 1560.6919827549318,
+          "y": 473.5399274405812,
+          "z": 0
+        },
+        "componentGroupName": "automation",
+        "codeApplicationName": "fail",
         "repeatable": true
       }
     }
   ],
-  "preview": "675f0722bd7450975afa54ec",
-  "_id": "675f07857cda85ac1c1a069c"
+  "preview": "67aa205820f9bf2d34879ca4",
+  "_id": "67aa20c7bd57d1631e7777bb"
 }
